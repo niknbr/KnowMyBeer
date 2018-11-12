@@ -1,0 +1,15 @@
+<div class="component-wrapper">
+  <div *ngIf="beer" class="container">
+    <div class="columns">
+      <div class="column col-2 img-container">
+        <img [src]="beer.image_url" class="img_holder" alt="">
+      </div>
+      <div class="column col-10">
+        <div class="details">
+          <h3>{{beer.name}}</h3>
+          <span>{{beer.description}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

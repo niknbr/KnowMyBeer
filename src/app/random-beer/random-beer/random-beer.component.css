@@ -1,0 +1,41 @@
+@import "../../../default-component-wrapper.css";
+.component-wrapper {
+    margin: 4px 3px 0px 4px;
+    padding: 3px;
+    height: 30%;
+    box-shadow: 0 0 5px 2px #DDD;
+    border-radius: 2px;
+}
+
+.beer-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.random-beer-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.columns {
+    width: 100%;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12em;
+    width: 30%;
+}
+
+.action-buttons button {
+    width: 10em;
+    height: 4em;
+    margin: 2px;
+    white-space: normal;
+}

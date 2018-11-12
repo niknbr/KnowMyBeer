@@ -1,0 +1,8 @@
+@import "../../../default-component-wrapper.css";
+
+.component-wrapper {
+    
+    padding: 1px;
+    height: 70%;
+}
+

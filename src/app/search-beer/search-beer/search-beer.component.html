@@ -1,0 +1,5 @@
+<div class="component-wrapper">
+  <app-search-bar (onSearch)="onBeerSearch($event)" [showSearching]="showSearching"></app-search-bar>
+  <div class="divider"></div>
+  <app-search-results [beers]="beerResults"></app-search-results>
+</div>

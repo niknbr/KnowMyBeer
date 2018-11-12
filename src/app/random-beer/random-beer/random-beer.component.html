@@ -1,0 +1,17 @@
+<div class="component-wrapper">
+  <div class="container random-beer-container">
+    <div class="columns">
+      <div class="column col-9 beer-details">
+        <div class="loading loading-lg" *ngIf="!beer"></div>
+        <app-beer-details [beer]="beer"></app-beer-details>
+      </div>
+      <div class="column col-1"></div>
+      <div class="column col-2">
+        <div class="action-buttons">
+          <button class="btn btn-primary" (click)="showAnotherBeer()">Another Beer</button>
+          <button class="btn btn-primary" (click)="showAnotherBeer(true)">Random Non Alcoholic Beer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

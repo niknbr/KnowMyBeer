@@ -1,0 +1,42 @@
+<div class="component-wrapper">
+  <div class="search-bar">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-6">
+          <span class="h3">Search</span>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8">
+          <div class="columns">
+            <div class="column col-6" [class.has-error]="showError">
+              <div class="has-icon-right">
+                <input type="text" class="form-input" placeholder="Search" [(ngModel)]="searchEvent.searchTerm" (keyup.enter)="search()">
+                <i *ngIf="!showSearching" class="form-icon icon icon-search"></i>
+                <i *ngIf="showSearching" class="form-icon loading"></i>
+              </div>
+              <p *ngIf="showError" class="form-input-hint has-error">Search term must only contain letters,
+                numbers, hyphens and spaces.</p>
+            </div>
+            <div class="column col-6">
+              <div class="search-filters">
+                <label class="form-radio">
+                  <input type="radio" name="name" [value]="'name'" [(ngModel)]="searchEvent.byFilter" checked>
+                  <i class="form-icon"></i> by Name
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="description" [value]="'description'" [(ngModel)]="searchEvent.byFilter">
+                  <i class="form-icon"></i> by Description
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column col-2"></div>
+        <div class="column col-2">
+          <button class="btn btn-primary" type="submit" (click)="search()">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

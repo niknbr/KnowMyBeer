@@ -1,0 +1,56 @@
+@import "../../../default-component-wrapper.css";
+.component-wrapper {
+    padding: 3px;
+    height: 70%;
+}
+
+.search-results {
+    width: 100%;
+}
+
+.empty-results {
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#DDD;
+    font-size: 3em;
+}
+
+.beer-list {
+    max-height: 28em;
+    overflow-y: scroll;
+    border: 1px solid #BBB;
+}
+
+.beer-list-item {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin: 9px 11px 0px 7px;
+    box-shadow: 0 0 5px 2px #DDD;
+    /* display: flex; */
+}
+
+.search-results .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-holder {
+    max-height: 10em;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,27 @@
+@import "../../../default-component-wrapper.css";
+.component-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beer-details {
+    width: 100%;
+    display: flex;
+}
+
+.beer-details .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+}
+.img-container{
+    display:flex;
+    justify-content: center;
+}
+
+.img_holder {
+    max-height: 10em;
+    max-width: 3em
+}
