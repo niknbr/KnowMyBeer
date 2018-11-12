@@ -1,27 +1,21 @@
-# Knowmybeer
+# Know My Beer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+An Angular 6 sample application based on PunkAPI.
 
-## Development server
+The applciation can be accessed at : https://nikz99.github.io/KnowMyBeer/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Highlights
+1. Standard angular applciation architecture based on core, feature and shared modules.
+2. Interceptor based caching mechanism to cache specific requests for 30 mins.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Additional Libraries Used
+1. [Spectre CSS](https://picturepan2.github.io/spectre/)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Future Improvements
+1. Custom decorator to update the no cache header to api requests
+2. At present, search based on description is done on *food* parameter of Punk API. RXJS forkJoin could be used to combine multiple API calls (with caching) for improved results.
+3. Infinite scroll for search results. Lazy load results based on scroll position.
+4. CSS Improvements
+5. Test case improvements.

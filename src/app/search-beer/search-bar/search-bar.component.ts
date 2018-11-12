@@ -7,7 +7,7 @@ import { SearchEvent } from 'src/app/core/events';
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css']
 })
-export class SearchBarComponent implements OnInit {
+export class SearchBarComponent {
 
   searchEvent: SearchEvent = {
     byFilter: 'name',
@@ -21,10 +21,6 @@ export class SearchBarComponent implements OnInit {
 
   @Output() onSearch: EventEmitter<SearchEvent> = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   validate(searchTerm: string): boolean {
     const regexp = RegExp(/^[0-9A-Za-z\s\-]+$/);
