@@ -2,7 +2,7 @@
 
 An Angular 6 sample application based on PunkAPI.
 
-The applciation can be accessed at : https://nikz99.github.io/KnowMyBeer/
+The applciation can be accessed at : https://niknbr.github.io/KnowMyBeer/
 
 #### Highlights
 1. Standard angular applciation architecture based on core, feature and shared modules.
